@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Claire Cullimore - Junior Full-Stack Developer</title>
+      <meta name="description" content="Personal website for Claire Cullimore Full-Stack Developer.">
+      <!-- Facebook Open Graph data -->
+      <meta property="og:title" content="Claire Cullimore - Junior Full-Stack Developer" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="" />
+      <meta property="og:image" content="" />
+      <meta property="og:description" content="Personal website for Claire Cullimore - Junior Full-Stack Developer." />
+      <meta property="og:site_name" content="Claire Cullimore - Junior Full-Stack Developer" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts Link -->
+    <script type="module" src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+<body>
+    <!-- NAVBAR -->
+  <nav class="nav">
+        <div class="container" >
+            <div class="logo">
+                <a href="#">Claire Cullimore</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div class="block -blue edge--bottom">
+      <div class="first-section">
+        <div class="intro-text">
+          <h1>Hey, I'm Claire.</h1>
+          <p>A Junior Full Stack Developer from London, UK. Looking for a new opportunity. </p>
+        </div>
+        <div class="intro-image">
+          <img class="large-avatar" src="photo.jpg">
+        </div>
+      </div>
+    </div>
+    <div>
+        <!-- just to make scrolling effect possible -->
+      <div class="block -orange edge--bottom--reverse">
+        <h1 id="portfolio">My Recent Work</h1>
+        <div class="row">
+            <div class="content">
+              <a href="http://www.hopdesk.fun" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="hopdesk-image.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Hop DESK</h3>
+                  <p class="content-text">This is a short description</p>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="http://www.hopdesk.fun" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="artswap-image.png">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Art Swap</h3>
+                  <p class="content-text">This is a short description</p>
+              </div>
+              </a>
+            </div>
+        </div>
+      </div>
+      <div class="block -green edge--bottom--reverse">
+        <h1 id="skills">My Skills</h1>
+        <h2>Languages I speak</h2>
+        <img class="icons" src="https://img.icons8.com/color/48/000000/ruby-gem.png"/>        <img class="icons" src="https://img.icons8.com/color/96/000000/html-5.png"/>
+        <img class="icons" src="https://img.icons8.com/color/48/000000/css3.png"/>
+        <img class="icons" src="https://img.icons8.com/color/48/000000/javascript-logo-1.png"/>
+        <h2>Platforms I have worked with</h2>
+      </div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+   <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+  </script>
+</body>
+</html>
+
+
+
