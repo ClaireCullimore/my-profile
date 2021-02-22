@@ -655,9 +655,6 @@ p {
   height: 70px;
 }
 
-.icons:hover {
-
-  shrink: 20px;
-}
+* { color:#fff; text-decoration: none;}
 
 
