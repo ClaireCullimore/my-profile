@@ -13,16 +13,11 @@
       <meta property="og:site_name" content="Claire Cullimore - Junior Full-Stack Developer" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Google Fonts Link -->
-    <script type="module" src="index.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
   </head>
 
 <body>
@@ -30,14 +25,15 @@
   <nav class="nav">
         <div class="container" >
             <div class="logo">
-                <a href="#">Claire Cullimore</a>
+                <a href="#">Claire Cullimore
+                </a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#get-in-touch">Get in touch</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -53,36 +49,44 @@
     <div class="block -blue edge--bottom">
       <div class="first-section">
         <div class="intro-text">
-          <h1>Hey, I'm Claire.</h1>
-          <p>A Junior Full Stack Developer from London, UK. Looking for a new opportunity. </p>
+          <h1>Hey I'm Claire</h1>
+          <p>A Junior Full Stack Developer from London, UK. </p>
         </div>
         <div class="intro-image">
-          <img class="large-avatar" src="photo.jpg">
+          <img class="large-avatar" src="images/photo.jpg">
         </div>
       </div>
     </div>
     <div>
         <!-- just to make scrolling effect possible -->
+    <div class="block -berry edge--bottom">
+      <h1>About Me </h1>
+      <div class="paragraph-box">
+        <p> An enthusiastic Junior Full-Stack Developer with positive attitude and determination to succeed in the tech industry. </p>
+        <p>Learning to code with Le Wagon in Autumn 2020 was the best career change I ever made. I have a passion for back-end problem solving & front-end design, and
+        enjoy creating functional, responsive and interactive web apps & love discovering new ways to do so. I am looking to pursue my first tech role and develop my skills within a talented team. </p>
+      </div>
+    </div>
       <div class="block -orange edge--bottom--reverse">
         <h1 id="portfolio">My Recent Work</h1>
         <div class="row">
             <div class="content">
               <a href="http://www.hopdesk.fun" target="_blank">
                 <div class="content-overlay"></div>
-                <img class="content-image" src="hopdesk-image.png">
+                <img class="content-image" src="images/hopdesk-image.png">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">Hop DESK</h3>
-                  <p class="content-text">This is a short description</p>
+                  <h4 class="content-text">Web app connecting people with local workspaces, including cafes, pubs and empty offices. Built using Ruby on Rails, HTML5, CSS & JS & deployed on Heroku</h4>
                 </div>
               </a>
             </div>
             <div class="content">
-              <a href="http://www.hopdesk.fun" target="_blank">
+              <a href="https://art-swap-clairecullimore.herokuapp.com/" target="_blank">
               <div class="content-overlay"></div>
-              <img class="content-image" src="artswap-image.png">
+              <img class="content-image" src="images/artswap-image.png">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">Art Swap</h3>
-                  <p class="content-text">This is a short description</p>
+                  <h4 class="content-text">Airbnb-like marketplace to hire artwork. Optimsed for computer screens only. Built using Ruby on Rails, HTML5, CSS & JS & deployed on Heroku.</h4>
               </div>
               </a>
             </div>
@@ -90,16 +94,35 @@
       </div>
       <div class="block -green edge--bottom--reverse">
         <h1 id="skills">My Skills</h1>
-        <h2>Languages I speak</h2>
-        <img class="icons" src="https://img.icons8.com/color/48/000000/ruby-gem.png"/>        <img class="icons" src="https://img.icons8.com/color/96/000000/html-5.png"/>
-        <img class="icons" src="https://img.icons8.com/color/48/000000/css3.png"/>
-        <img class="icons" src="https://img.icons8.com/color/48/000000/javascript-logo-1.png"/>
-        <h2>Platforms I have worked with</h2>
+      </br>
+        <h3>Languages I speak</h3>
+        <img class="icons" src="images/html.png"/>
+        <img class="icons" src="images/css.png"/>
+        <img class="icons" src="images/ruby.png"/>
+      </br>
+        <h3>Basic Knowledge</h3>
+        <img class="icons" src="images/js.png"/>
+        <img class="icons" src="images/react.png"/>
+      </br>
+        <h3>Platforms I have worked with</h3>
+        <img class="icons" src="images/github.png"/>
+        <img class="icons" src="images/heroku.png"/>
+        <img class="icons" src="images/figma.png"/>
+        <img class="icons" src="images/bootstrap.png"/>
+        <img class="icons" src="images/photoshop.png"/>
+        <img class="icons" src="images/slack.png"/>
       </div>
-
-    <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+      <div class="block -berry edge--bottom--reverse">
+        <h2 id="get-in-touch">Get in touch</h2>
+        <a href="https://github.com/ClaireCullimore">
+              <img class="small-icons" src="images/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/clairecullimore/">
+          <img class="small-icons"src="images/linkedin.png" alt="">
+        </a>
+        <a href="mailto: cascullimore@gmail.com">
+              <img class="small-icons" src="images/mail.png" alt=""></a>
+        </div>
+      </div>
 
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
    <script>
@@ -137,6 +160,15 @@
           } // End if
         });
       });
+  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/jquery.timelinr-0.9.54.js"></script>
+  <script>
+    $(function(){
+          $().timelinr({
+            arrowKeys: 'true'
+          })
+        });
   </script>
 </body>
 </html>
