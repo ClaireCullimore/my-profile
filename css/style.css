@@ -25,6 +25,7 @@ h3 {
   font-size: 30px;
   font-weight: 500;
   font-family: "Quicksand", sans-serif;
+  color: rgba(38, 50, 56, 1);
 }
 
 h4{
@@ -36,23 +37,8 @@ p {
   width: 100%;
   font-size: 25px;
   font-weight: 300;
-  color: #ababab;
+  color: rgba(38, 50, 56, 1);
   font-family: "Quicksand", sans-serif;
-}
-
-@media (max-width: 576px) {
-    p {
-      font-size: 20px;
-    }
-}
-
-@media (max-width: 360px) {
-  p {
-      font-size: 15px;
-      width: 200px;
-      margin: auto;
-      padding-top: 20px;
-    }
 }
 
 .first-section {
@@ -69,6 +55,10 @@ p {
       padding-bottom: 50px;
       flex-direction: column;
     }
+
+    .intro-text {
+    margin: auto;
+  }
 }
 @media (max-width: 640px) {
   .first-section {
@@ -79,24 +69,31 @@ p {
     }
 }
 
+@media (max-width: 576px) {
+    p {
+      font-size: 20px;
+    }
+
+    .intro-text {
+    padding-top: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  p {
+      font-size: 15px;
+      width: 200px;
+      margin: auto;
+      padding-top: 20px;
+    }
+}
+
 .intro-text {
   width: 590px;
   text-align: center;
   padding-top: 85px;
   margin-left: 100px;
-}
-
-@media(max-width: 768px) {
-  .intro-text {
-    margin: auto;
-  }
-}
-
-@media (max-width: 576px) {
-  .intro-text {
-    padding-top: 0px;
-    width: 100%;
-  }
 }
 
 .intro-text h1 {
@@ -134,12 +131,6 @@ p {
   text-align: center;
 }
 
-@media(max-width: 576px) {
-  .grey-section {
-  padding-bottom: 10px
-  }
-}
-
 .container {
   text-align: center;
 }
@@ -157,20 +148,10 @@ p {
 }
 
 .container h3 {
-  color: #00002E;
+  color: rgba(38, 50, 56, 1);
   font-size: 30px;
   font-weight: 500;
   font-family: "Quicksand", sans-serif;
-}
-
-@media (max-width: 576px) {
-  .container h2 {
-    font-size: 40px;
-    }
-
-  .container h3 {
-  font-size: 20px
-}
 }
 
 .paragraph-box {
@@ -179,21 +160,29 @@ p {
   padding: 30px;
   border-top: 5px solid #00002E;
   margin: 10px;
-
 }
-
 
 .portfolio-section {
   padding-bottom: 100px;
-}
-
-@media(max-width: 576px) {
-  .portfolio-section {
-  padding-bottom: 10px
-  }
 }
 
 .large-box {
   display: flex;
 }
 
+@media(max-width: 576px) {
+  .portfolio-section {
+  padding-bottom: 10px
+  }
+  .container h2 {
+    font-size: 40px;
+    }
+
+  .container h3 {
+  font-size: 20px
+  }
+
+  .grey-section {
+  padding-bottom: 10px
+  }
+}
