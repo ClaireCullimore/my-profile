@@ -46,6 +46,15 @@ p {
     }
 }
 
+@media (max-width: 360px) {
+  p {
+      font-size: 15px;
+      width: 200px;
+      margin: auto;
+      padding-top: 20px;
+    }
+}
+
 .first-section {
   display: flex;
   background: #00002E;
@@ -66,7 +75,7 @@ p {
       padding-top: 0px;
       padding-bottom: 50px;
       flex-direction: column;
-      height: 400px
+      height: 500px;
     }
 }
 
@@ -163,8 +172,6 @@ p {
   font-size: 20px
 }
 }
-
-
 
 .paragraph-box {
   box-shadow : 0 1px 2px rgba(0,0,0,0.2);
