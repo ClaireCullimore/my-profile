@@ -154,9 +154,14 @@ p {
   font-family: "Quicksand", sans-serif;
 }
 
-.container h3:hover {
-  color: #6495ED;
+#link {
+
+}
+
+#link:hover {
   text-decoration: none;
+  color: #6495ED;
+
 }
 
 .paragraph-box {
