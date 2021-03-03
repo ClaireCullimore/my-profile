@@ -14,6 +14,13 @@
   }
 }
 
+@media(max-width: 943px) {
+  .large-avatar {
+    height: 350px;
+    width: 350px;
+  }
+}
+
 @media(max-width: 768px) {
   .large-avatar {
     height: 300px;
@@ -21,7 +28,7 @@
   }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 665px) {
   .large-avatar {
     height: 200px;
     width: 200px;
